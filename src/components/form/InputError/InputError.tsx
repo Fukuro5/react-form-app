@@ -1,7 +1,7 @@
 import { useFormContext } from "react-hook-form";
+import getGroupedFormErrors from "utils/form/getGroupedFormErrors";
 import { Error, ErrorWrapper } from "./styles";
 import { IInputFieldProps } from "../InputField/types";
-import getGroupedFormErrors from "../../../utils/form/getGroupedFormErrors";
 
 const InputError = ({ name, validationErrors, isLarge }: IInputFieldProps) => {
   const {

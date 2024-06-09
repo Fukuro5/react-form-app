@@ -2,6 +2,8 @@ import { FormProvider, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import Modal from "components/Modal/Modal";
+import InputField from "components/form/InputField/InputField";
 import { AuthorizationForm, SignButton, Title } from "./styles";
 import {
   EMAIL_VALIDATION_ERRORS,
@@ -9,8 +11,6 @@ import {
   SIGN_UP_FORM_FIELDS,
 } from "./consts";
 import useAuthorizationSchema from "./hooks/useAuthorizationSchema";
-import InputField from "../../components/form/InputField/InputField";
-import Modal from "../../components/Modal/Modal";
 
 const Authorization = () => {
   const { t } = useTranslation();

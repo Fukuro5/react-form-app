@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
-import BalloonsPng from "../../assets/balloons.png";
+import BalloonsPng from "assets/balloons.png";
 
 export const ModalWrapper = styled.div`
   position: fixed;

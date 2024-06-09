@@ -1,4 +1,4 @@
-import en from "../../i18n/locales/en.json";
+import en from "i18n/locales/en.json";
 
 export const PASSWORD_VALIDATION_ERRORS = Object.values(
   en.fields.password.validation,
