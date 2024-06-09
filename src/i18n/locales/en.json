@@ -1,0 +1,31 @@
+{
+  "common": {
+    "ok": "Ok"
+  },
+  "fields": {
+    "email": {
+      "label": "Email",
+      "validation": {
+        "valid": "Email must be valid"
+      }
+    },
+    "password": {
+      "label": "Password",
+      "validation": {
+        "8orMoreCharacters": "8 characters or more",
+        "64orLessCharacters": "64 characters or less",
+        "uppercaseAndLowercase": "At least one uppercase and one lowercase letter",
+        "atLeastOneNumber": "At least one number",
+        "noSpaces": "No spaces"
+      }
+    }
+  },
+  "authorizationPage": {
+    "title": "Authorization",
+    "submitButton": "Sign In"
+  },
+  "successModal": {
+    "title": "Congratulations!",
+    "description": "You have successfully signed up!"
+  }
+}
