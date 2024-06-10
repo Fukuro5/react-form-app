@@ -14,7 +14,7 @@
       "validation": {
         "8orMoreCharacters": "8 characters or more",
         "64orLessCharacters": "64 characters or less",
-        "uppercaseAndLowercase": "At least one uppercase and one lowercase letter",
+        "atLeastOneUppercaseLetter": "At least one uppercase letter",
         "atLeastOneNumber": "At least one number",
         "noSpaces": "No spaces"
       }
