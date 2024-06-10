@@ -3,7 +3,11 @@ import getGroupedFormErrors from "utils/form/getGroupedFormErrors";
 import { Error, ErrorWrapper } from "./styles";
 import { IInputFieldProps } from "../InputField/types";
 
-const InputError = ({ name, validationErrors, isLarge }: IInputFieldProps) => {
+const InputError = ({
+  name,
+  validationErrors,
+  isLarge,
+}: Pick<IInputFieldProps, "name" | "validationErrors" | "isLarge">) => {
   const {
     formState: { errors, isSubmitted },
   } = useFormContext();

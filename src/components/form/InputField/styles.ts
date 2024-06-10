@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+import OpenedEyeSvg from "assets/opened-eye.svg";
+import ClosedEyeSvg from "assets/closed-eye.svg";
 
 export const InputWrapper = styled.div`
   width: 100%;
@@ -43,4 +45,18 @@ export const Input = styled.input<{ isValid?: boolean; isSubmitted?: boolean }>`
       : `
       border: 2px solid #FF7F7F;
     `)}
+`;
+
+export const PasswordVisibilityButton = styled.button<{ isOpen: boolean }>`
+  background-image: url(${({ isOpen }) =>
+    isOpen ? OpenedEyeSvg : ClosedEyeSvg});
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 12px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.4s;
 `;

@@ -12,3 +12,5 @@ export const SIGN_UP_FORM_FIELDS = {
   email: "email",
   password: "password",
 } as const;
+
+export const LOADER_DELAY = 2000;
